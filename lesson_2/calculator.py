@@ -12,7 +12,7 @@ def invalid_number(number_str):
         int(number_str)
     except ValueError:
         return True
-    
+
     return False
 
 prompt('Welcome to Calculator')
@@ -31,7 +31,8 @@ while invalid_number(number2):
     number2 = input()
 
 
-print('What operation would you line to perform?\n 1) Add 2) Subtract 3) Multiply 4) Divide')
+print("""What operation would you line to perform?
+1) Add 2) Subtract 3) Multiply 4) Divide""")
 operation = input()
 
 while operation not in ["1", "2", "3", "4"]:
