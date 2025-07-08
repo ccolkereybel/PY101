@@ -4,10 +4,13 @@
 #Perform operation on the two numbers
 #Print result to the terminal
 
-print('Welcome to Calculator')
-print("What's the first number?")
+def prompt(message):
+    print(f'==> {message}')
+
+prompt('Welcome to Calculator')
+prompt("What's the first number?")
 number1 = input()
-print("What's the second number?")
+prompt("What's the second number?")
 number2 = input()
 
 print(f'{number1} {number2}')
