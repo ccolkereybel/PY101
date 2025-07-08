@@ -18,6 +18,11 @@ def invalid_number(number_str):
 prompt('Welcome to Calculator')
 prompt("What's the first number?")
 number1 = input()
+
+while invalid_number(number1):
+    prompt("Hmm... that doesn't look like a valid number.")
+    number1 = input()
+
 prompt("What's the second number?")
 number2 = input()
 
