@@ -7,6 +7,14 @@
 def prompt(message):
     print(f'==> {message}')
 
+def invalid_number(number_str):
+    try:
+        int(number_str)
+    except ValueError:
+        return True
+    
+    return False
+
 prompt('Welcome to Calculator')
 prompt("What's the first number?")
 number1 = input()
