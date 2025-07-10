@@ -37,8 +37,7 @@ while True:
 
         if answer.startswith('n') or answer.startswith('y'):
             break
-        else:
-            prompt("That is not a valid choice")
-    
+        prompt("That is not a valid choice")
+
     if answer[0] == 'n':
         break
